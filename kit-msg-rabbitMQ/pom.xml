@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>module-base</artifactId>
+    <artifactId>kit-msg-rabbitMQ</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -18,20 +18,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-        <!--
-        JUnit 5 = JUnit Platform + JUnit Jupiter + JUnit Vintage
-            junit-platform: server as a foundation for launching testing framework on the JVM
-
-            feature:
-
-
-
-        -->
-
-
     </dependencies>
 
 </project>

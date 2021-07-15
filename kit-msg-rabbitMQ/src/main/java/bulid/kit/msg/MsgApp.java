@@ -1,13 +1,13 @@
-package build.module.base;
+package bulid.kit.msg;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ModuleBase {
+public class MsgApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(ModuleBase.class, args);
+        SpringApplication.run(MsgApp.class, args);
     }
 
 }

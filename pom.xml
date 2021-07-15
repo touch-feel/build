@@ -7,6 +7,7 @@
         <module>tool-dev</module>
         <module>tool-mybatis-generator</module>
         <module>tool-template</module>
+        <module>kit-msg-rabbitMQ</module>
 
     </modules>   <!-- pom dtd  version -->
 
@@ -40,6 +41,11 @@
         </dependency>
 
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>RELEASE</version>
@@ -57,9 +63,15 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
+                    <artifactId>junit-vintage-engine</artifactId>   <!--this engine used for Junit-4 test, then excluded-->
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
